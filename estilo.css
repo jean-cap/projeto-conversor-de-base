@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --tamanho-fonte: 1.4rem;
+    --cor-fonte: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--cor-fonte);
+    background: #CB356B;
+    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);
+    background: linear-gradient(to right, #BD3F32, #CB356B);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    margin: 0;
+    color: #fffa;
+}
+
+.seletores {
+    min-width: 25%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--tamanho-fonte);
+}
+
+.seletores > label {
+    line-height: 55px;
+    vertical-align: middle;
+}
+
+.entrada {
+    outline: none;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    font-size: var(--tamanho-fonte);
+    color: var(--cor-fonte);
+    border-radius: 5px;
+    border: 1px solid #0009;
+    background-color: #0005;
+    text-align: center;
+}
+
+#numero {
+    width: 100px;
+}
+
+#botao {
+    color: var(--cor-fonte);
+    background-color: #e82828;
+    margin-top: 15px;
+    padding: 10px 35px;
+    border-radius: 200px;
+    border: solid 2px #a01c13;
+    font-size: var(--tamanho-fonte);
+    font-family: "Oswald", sans-serif;
+}
+
+#botao:hover {
+    cursor: pointer;
+    background-color: #d31414;
+}
+
+#resultado {
+    font-size: var(--tamanho-fonte);
+    margin: 30px 0;
+    padding: 15px 30px;
+    border: solid 1px #0009;
+    background-color: #0005;
+    border-radius: 15px;
+}
+
+#resultado > sub {
+    margin-left: 5px;
+}
+
+.invisivel {
+    display: none;
+}
